@@ -69,3 +69,28 @@
 #result span{
     color: #ffff76;
 }
+/* Media query for screens smaller than 768px (tablets and phones) */
+@media (max-width: 768px) {
+    .calculator h1 {
+        font-size: 8vw; /* Increase font size slightly */
+    }
+    .input-box {
+        flex-direction: column; /* Stack input and button for small screens */
+    }
+}
+
+/* Media query for very small screens (mobile phones) */
+@media (max-width: 480px) {
+    .calculator {
+        margin-top: 15%; /* Increase top margin for small screens */
+    }
+    .input-box input {
+        padding: 12px 20px; /* Reduce padding for smaller screens */
+    }
+    .input-box button {
+        padding: 12px 25px;
+    }
+    #result {
+        font-size: 5vw; /* Slightly larger font size for the result */
+    }
+}
